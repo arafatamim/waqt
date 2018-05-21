@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'/>
+    <title>Waqt</title>
+</head>
+<body>
+
+        <div id="headerBox">
+            <div id="headerText">Waqt</div>
+            <div id="headerSettings" class="fa fa-cog"></div>
+            <div class="clear"></div>
+        </div>
+    
+        <div class="contentContainer">
+        
+            <div class="contentBox">
+                <div class="divWaqt" id="divWaqt1">
+                    <div class="waqtName">Fajr</div>
+                    <div class="waqtTime" id="waqtTime1">-</div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        
+            <div class="contentBox">
+                <div class="divWaqt" id="divWaqt2">
+                    <div class="waqtName">Sunrise</div>
+                    <div class="waqtTime" id="waqtTime2">-</div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        
+            <div class="contentBox">
+                <div class="divWaqt" id="divWaqt3">
+                    <div class="waqtName">Dhuhr</div>
+                    <div class="waqtTime" id="waqtTime3">-</div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        
+            <div class="contentBox">
+                <div class="divWaqt" id="divWaqt4">
+                    <div class="waqtName">Asr</div>
+                    <div class="waqtTime" id="waqtTime4">-</div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        
+            <div class="contentBox">
+                <div class="divWaqt" id="divWaqt5">
+                    <div class="waqtName">Maghrib</div>
+                    <div class="waqtTime" id="waqtTime5">-</div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        
+            <div class="contentBox">
+                <div class="divWaqt" id="divWaqt6">
+                    <div class="waqtName">Isha</div>
+                    <div class="waqtTime" id="waqtTime6">-</div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    <div id="dimmer"></div>
+
+    <div class="settingsBox">
+        <div id="divSettingsHeader">
+            <div id="settingsText">Settings</div>
+            <div id="closeIcon" class="fa fa-close"></div>
+            <div class="clear"></div>
+        </div>
+        <div id="divSettingsContent">
+            <div class="control1">
+                City: <input type="text" name="txtCity" id="txtCity" value="Jahra">
+            </div>
+            <div class="control2">
+                Country: <input type="text" name="txtCountry" id="txtCountry" value="Kuwait">
+            </div>
+            <div class="control3">
+                Method: 
+                <select id="cmbMethod">
+                    <option value="mwl">Muslim World League</option>
+                    <option value="isna">Islamic Society of North America</option>
+                    <option value="egas">Egyptian General Authority of Survey</option>
+                    <option value="makkah">Umm al-Qura University, Makkah</option>
+                    <option value="karachi">University of Islamic Sciences, Karachi</option>
+                    <option value="tehran">Institute of Geophysics, University of Tehran</option>
+                    <option value="shia">Shia Ithna Ansari, Leva Research Institute, Tehran</option>
+                </select>
+            </div>
+            <div id="localTime">Local Time: Unknown</div>
+            <div id="timezone">Timezone: Unknown</div>
+            <div id="aboutInfo">
+                An app to display current prayer times for the selected location.
+                <br>
+                Made with <i class="fa fa-heart-o"></i> by Tamim Arafat.
+                <br>
+                <a href="http://github.com/arafatamim" class="aboutLink">GitHub</a> | 
+                <a href="mailto:tamim.arafat@gmail.com" class="aboutLink">E-mail</a> | 
+                <a href="http://facebook.com/arafatamim" class="aboutLink">Facebook</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="errorBanner">
+        <span class="bannerIcon"><i class="fa fa-exclamation-circle"></i></span>
+        <span class="bannerText">No internet connection</span>
+    </div>
+    <div class="warningBanner">
+        <span class="bannerIcon"><i class="fa fa-warning"></i></span>
+        <span class="bannerText">Specified location is not valid</span>
+    </div>
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script>window.$ = window.jQuery = require('./js/jquery.min.js');</script>  <!--Required for Electron-->
+<script src="js/moment.min.js"></script>
+<script src="js/script.js"></script>
+</html>

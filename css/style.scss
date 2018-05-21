@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:500');
+
+$default-font: 'Quicksand', sans-serif;
+$theme-color: #0054d3;
+body {
+    background-color: $theme-color;
+    margin: 0;
+    font-family: $default-font;
+    user-select: none;
+    cursor: default;
+}
+
+#headerBox {
+    color: #eee;
+    padding: 30px;
+    font-size: 20pt;
+    vertical-align: middle;
+    #headerText {
+        float: left;
+    }
+    #headerSettings {
+        float: right;
+        cursor: pointer;
+    }
+    #headerSettings:hover{
+        color: #fff;
+    }
+    .clear {
+        clear: both;
+    }
+}
+.contentContainer{
+    margin: 10px 40px 10px 40px;
+    display: grid;
+}
+
+.contentBox{
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 2px;
+    vertical-align: middle;
+
+    .waqtName{
+        float: left;
+        font-size: 16pt;
+        text-align: left;
+    }
+    .waqtTime{
+        float: right;
+        font-size: 18pt;
+        text-align: right;
+    }
+}
+
+#dimmer{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:black;
+    opacity:0.7;
+    z-index:1001;
+}
+input:focus, select:focus{
+    outline: none;
+    border-bottom: 2px solid #0056c7 !important;
+}
+.settingsBox{
+    z-index: 1002;
+    padding: 25px;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    width: 300px;
+    margin-left: -175px;
+    height: 285px;
+    margin-top: -25px;
+    border-radius: 5px;
+    background-color: #fff;
+
+    #divSettingsHeader{
+        #settingsText{
+            float: left;
+        }
+        #closeIcon{
+            float: right;
+            cursor: pointer;
+        }
+    }
+    #divSettingsContent{
+        position: relative;
+        top: 50px;
+        // left: -20px;
+        font-size: 11pt;
+
+        #txtCity, #txtCountry{
+            font-size: 11pt;
+            padding: 2px;
+            border: none;
+            border-bottom: 1px solid #555;
+            font-family: $default-font;
+        }
+        #cmbMethod{
+            background: transparent;
+            width: 185px;
+            font-size: 11pt;
+            font-family: $default-font;
+            border: 0;
+            border-bottom: 1px solid #555;
+            border-radius: 0;
+            height: 25px;
+        }
+        .control2{
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+        .control3{
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+        #localTime{
+            margin-top: 10px;
+        }
+        #aboutInfo{
+            margin-top: 20px;
+            color: #555;
+        }
+        .aboutLink{
+            color: #222;
+            text-decoration: none;
+        }
+    }
+}
+
+#dimmer, .settingsBox{
+    display: none;
+}
+
+.warningBanner{
+    position: fixed;
+    bottom: 0px;
+    background-color: #ffd725;
+    color: #111;
+    padding: 10px;
+    width: 100%;
+    display: none;
+    z-index: 1004;
+}
+.errorBanner{
+    position: fixed;
+    bottom: 0px;
+    background-color: #ff2a2a;
+    color: #eee;
+    padding: 10px;
+    width: 100%;
+    display: none;
+    z-index: 1003;
+}
