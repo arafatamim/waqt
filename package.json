@@ -1,7 +1,7 @@
 {
   "name": "waqt",
-  "version": "0.0.1",
-  "description": "Prayer times app",
+  "version": "1.0.0",
+  "description": "View Islamic prayer times for a specified location",
   "homepage": "https://github.com/arafatamim/waqt",
   "main": "main.js",
   "scripts": {
@@ -22,7 +22,6 @@
       "category": "utility"
     },
     "win": {
-      "target": "NSIS",
       "icon": "build/icon.ico"
     }
   },

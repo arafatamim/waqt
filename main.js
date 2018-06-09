@@ -11,6 +11,7 @@ function createWindow() {
     win = new BrowserWindow({
         width: 400,
         height: 660,
+        icon: path.join(__dirname, "build/icon.png"),
         resizable: false,
         show: false
     })
