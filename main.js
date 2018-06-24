@@ -13,7 +13,7 @@ function createWindow() {
         width: 400,
         height: 660,
         icon: path.join(__dirname, "build/icon.png"),
-        resizable: true,
+        resizable: false,
         show: false
     });
     win.setMenu(null);
