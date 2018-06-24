@@ -1,7 +1,7 @@
 {
   "name": "waqt",
   "productName": "Waqt",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "View Islamic prayer times for a specified location",
   "homepage": "https://arafatamim.github.io/projets/waqt",
   "repository": {
