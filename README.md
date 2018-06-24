@@ -16,6 +16,8 @@ OR,
 
 ## To-do
 - [ ] Add 24-hr time option
+- [ ] Highlight the next time
+- [ ] Tray support and notifications
 - [ ] Clean up the code
 
 
