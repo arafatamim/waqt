@@ -1,6 +1,6 @@
 <img src="/build/icon.png?raw=true" height="64" width="64">
 
-# Waqt
+# Waqt [deprecated]
 Electron-based app to display today's Islamic prayer times.
 
 ## Screenshot
@@ -21,3 +21,7 @@ OR,
 
 ## License
 MIT Licensed.
+
+---
+
+### [!] This project is deprecated. Check out the successor of Waqt [here](https://github.com/arafatamim/waqt-web)
